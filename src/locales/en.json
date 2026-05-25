@@ -1,0 +1,130 @@
+{
+  "itinerary": {
+    "title": "Your Day as a Nomad",
+    "items": {
+      "teaHouse": { "title": "Tea House & Introduction", "description": "Meet your guide over traditional chai and bread" },
+      "mountain": { "title": "Sulaiman-Too Sacred Mountain", "description": "Explore the holy mountain with ancient petroglyphs" },
+      "samsa": { "title": "Traditional Samsa Stop", "description": "Taste fresh-baked samsa from a local tandoor oven" },
+      "yurt": { "title": "Build Your Nomad Yurt", "description": "Hands-on workshop with nomad craftspeople" },
+      "archery": { "title": "Horse Archery Lesson", "description": "Learn the ancient art of mounted archery" },
+      "dinner": { "title": "Kuurdak Dinner & Stories", "description": "Traditional feast with local music and tales" }
+    }
+  },
+  "header": {
+    "experience": "Experience",
+    "itinerary": "Itinerary",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "guideLink": "OSH Travel Guide"
+  },
+  "hero": {
+    "title1": "GASTRO-ETNO",
+    "title2": "TOUR – OSH",
+    "subtitle": "Become a Nomad for a Day",
+    "description": "Experience authentic nomadic life in the mountains of southern Kyrgyzstan. Build a yurt, learn archery, taste traditional food, and share stories with local families.",
+    "bookBtn": "Book Your Experience",
+    "videoBtn": "Watch Video",
+    "rating": "4.9 Rating",
+    "reviews": "120+ reviews",
+    "duration": "6-7 Hours",
+    "durationSub": "Full experience",
+    "group": "Small Groups",
+    "groupSub": "Max 10 people"
+  },
+  "experience": {
+    "tag": "Why Choose Gastro-Etno Tour",
+    "title": "This experience lets you live like a real nomad.",
+    "description": "Not a typical tour. Join real nomad families in their daily traditions—from building yurts to cooking over open fires. Real people, real culture, real connections.",
+    "cards": {
+      "mountain": {
+        "title": "Sacred Mountain",
+        "description": "Climb the UNESCO World Heritage Sulaiman-Too with breathtaking views"
+      },
+      "yurt": {
+        "title": "Build a Yurt",
+        "description": "Learn traditional yurt construction from nomad masters"
+      },
+      "archery": {
+        "title": "Nomad Archery",
+        "description": "Practice ancient archery techniques on horseback"
+      },
+      "music": {
+        "title": "Traditional Music",
+        "description": "Experience authentic komuz music and nomad storytelling"
+      },
+      "feast": {
+        "title": "Kyrgyz Feast",
+        "description": "Taste kuurdak, samsa, and bread cooked over fire"
+      }
+    }
+  },
+  "yurtPromo": {
+    "title": "Build a Real Nomad Yurt",
+    "description": "Learn the ancient craft of yurt construction from nomad families who've practiced these techniques for generations. Get hands-on experience assembling the traditional wooden frame.",
+    "watchBtn": "Watch Video"
+  },
+  "reviews": {
+    "title": "Loved by Travellers",
+    "viewAll": "View all reviews on Google →"
+  },
+  "nomadCta": {
+    "title": "Live Like a Kyrgyz Nomad for One Day",
+    "subtitle": "Real people, real culture, real memories.",
+    "button": "Contact Us",
+    "features": {
+      "groups": {
+        "title": "Small Groups",
+        "subtitle": "Max 10 people"
+      },
+      "duration": {
+        "title": "6–7 Hours",
+        "subtitle": "Full experience"
+      },
+      "food": {
+        "title": "Food Included",
+        "subtitle": "Traditional meals"
+      },
+      "location": {
+        "title": "Osh, Kyrgyzstan",
+        "subtitle": "Silk Road city"
+      }
+    }
+  },
+  "contact": {
+    "tag": "Contact Us",
+    "title": "We're Here for You",
+    "description": "Ask any question or book your tour right away — we reply quickly on any messenger.",
+    "channels": {
+      "telegram": {
+        "title": "Telegram",
+        "value": "@gastroetnotour",
+        "hint": "Reply within 15 minutes"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "value": "+996 XXX XXX XXX",
+        "hint": "Calls and messages"
+      },
+      "instagram": {
+        "title": "Instagram",
+        "value": "@gastroetnotour",
+        "hint": "Tour photos and videos"
+      },
+      "email": {
+        "title": "Email",
+        "value": "info@gastroetnotour.com",
+        "hint": "For official inquiries"
+      }
+    },
+    "address": {
+      "title": "Our Address",
+      "text": "Osh, Kyrgyzstan — we meet at Sulaiman-Too"
+    },
+    "hours": {
+      "title": "Working Hours",
+      "text": "Daily from 9:00 AM to 8:00 PM"
+    }
+  }
+}
+

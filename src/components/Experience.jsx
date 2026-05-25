@@ -1,44 +1,40 @@
-import React, { useRef, useState, useEffect } from 'react'
-import { Mountain, Home, ShieldAlert, Music, Utensils, ChevronLeft, ChevronRight } from 'lucide-react'
+import { useRef, useState, useEffect } from 'react'
+import { Mountain, Home, Target, Music, Utensils, ChevronLeft, ChevronRight } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
 
 // Curated high-quality Kyrgyzstan and nomadic lifestyle images from Unsplash
 const experiences = [
   {
     id: 1,
-    title: 'Sacred Mountain',
-    description: 'Climb the UNESCO World Heritage Sulaiman-Too with breathtaking views',
+    key: 'mountain',
     image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
     icon: Mountain,
     color: 'text-emerald-600 bg-emerald-50 hover:bg-emerald-100',
   },
   {
     id: 2,
-    title: 'Build a Yurt',
-    description: 'Learn traditional yurt construction from nomad masters',
+    key: 'yurt',
     image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80',
     icon: Home,
     color: 'text-amber-600 bg-amber-50 hover:bg-amber-100',
   },
   {
     id: 3,
-    title: 'Nomad Archery',
-    description: 'Practice ancient archery techniques on horseback',
+    key: 'archery',
     image: 'https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?auto=format&fit=crop&w=800&q=80',
-    icon: ShieldAlert, // Using ShieldAlert as a stylized arrow target look
+    icon: Target,
     color: 'text-orange-600 bg-orange-50 hover:bg-orange-100',
   },
   {
     id: 4,
-    title: 'Traditional Music',
-    description: 'Experience authentic komuz music and nomad storytelling',
+    key: 'music',
     image: 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80',
     icon: Music,
     color: 'text-purple-600 bg-purple-50 hover:bg-purple-100',
   },
   {
     id: 5,
-    title: 'Kyrgyz Feast',
-    description: 'Taste kuurdak, samsa, and bread cooked over fire',
+    key: 'feast',
     image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
     icon: Utensils,
     color: 'text-rose-600 bg-rose-50 hover:bg-rose-100',
@@ -46,6 +42,7 @@ const experiences = [
 ]
 
 export default function Experience() {
+  const { t } = useLanguage()
   const scrollRef = useRef(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
@@ -82,18 +79,19 @@ export default function Experience() {
   }
 
   return (
-    <section className="py-20 px-6 md:px-12 max-w-7xl mx-auto">
+    <section id="experience" className="py-20 px-6 md:px-12 max-w-7xl mx-auto">
+
       {/* Top Header Section */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
         <div className="max-w-2xl">
           <span className="text-xs font-semibold uppercase tracking-wider text-amber-600 block mb-3">
-            Why Choose Gastro-Etno Tour
+            {t('experience.tag')}
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tight mb-4">
-            This experience lets you live like a real nomad.
+            {t('experience.title')}
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Not a typical tour. Join real nomad families in their daily traditions—from building yurts to cooking over open fires. Real people, real culture, real connections.
+            {t('experience.description')}
           </p>
         </div>
 
@@ -134,6 +132,7 @@ export default function Experience() {
       >
         {experiences.map((exp) => {
           const IconComponent = exp.icon
+          const cardTitle = t(`experience.cards.${exp.key}.title`)
           return (
             <div
               key={exp.id}
@@ -143,7 +142,7 @@ export default function Experience() {
               <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden mb-4 shadow-sm">
                 <img
                   src={exp.image}
-                  alt={exp.title}
+                  alt={cardTitle}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => {
@@ -160,10 +159,10 @@ export default function Experience() {
 
               {/* Title & Description */}
               <h3 className="font-sans text-xl font-bold text-gray-900 mb-1 group-hover:text-amber-600 transition-colors">
-                {exp.title}
+                {cardTitle}
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                {exp.description}
+                {t(`experience.cards.${exp.key}.description`)}
               </p>
             </div>
           )
@@ -172,3 +171,4 @@ export default function Experience() {
     </section>
   )
 }
+

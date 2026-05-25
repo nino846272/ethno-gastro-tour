@@ -1,0 +1,47 @@
+{
+  "googleReviewsUrl": "#",
+  "items": [
+    {
+      "id": "sarah",
+      "rating": 5,
+      "name": "Sarah Mitchell",
+      "location": {
+        "ru": "Австралия",
+        "en": "Australia"
+      },
+      "text": {
+        "ru": "Самый аутентичный культурный опыт за все мои путешествия. Сборка юрты с настоящими кочевыми семьями — как путешествие во времени. Незабываемо!",
+        "en": "This was the most authentic cultural experience I've had in all my travels. Building the yurt with real nomad families felt like stepping back in time. Absolutely unforgettable!"
+      },
+      "avatar": "https://i.pravatar.cc/96?u=sarah-mitchell"
+    },
+    {
+      "id": "marcus",
+      "rating": 5,
+      "name": "Marcus Chen",
+      "location": {
+        "ru": "Сингапур",
+        "en": "Singapore"
+      },
+      "text": {
+        "ru": "Наш гид был потрясающим — столько знаний об истории и культуре Кыргызстана. Урок стрельбы из лука непростой, но того стоит. А еда? Просто восхитительно!",
+        "en": "Our guide was incredible — so knowledgeable about Kyrgyz history and culture. The archery lesson was challenging but so rewarding. And the food? Simply amazing!"
+      },
+      "avatar": "https://i.pravatar.cc/96?u=marcus-chen"
+    },
+    {
+      "id": "elena",
+      "rating": 5,
+      "name": "Elena Kovač",
+      "location": {
+        "ru": "Хорватия",
+        "en": "Croatia"
+      },
+      "text": {
+        "ru": "Я была на десятках «культурных туров», и этот выделяется. Это не шоу для туристов — настоящие люди делятся настоящими традициями. Каждая минута того стоила.",
+        "en": "I've done dozens of 'cultural tours' and this stands apart. It's not a show for tourists — these are real people sharing their real traditions. Worth every moment."
+      },
+      "avatar": "https://i.pravatar.cc/96?u=elena-kovac"
+    }
+  ]
+}
