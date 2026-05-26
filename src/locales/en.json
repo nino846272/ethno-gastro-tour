@@ -16,7 +16,11 @@
     "gallery": "Gallery",
     "reviews": "Reviews",
     "faq": "FAQ",
-    "guideLink": "OSH Travel Guide"
+    "contactBtn": "Contact Us",
+    "guideLink": "OSH Travel Guide",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "menuTitle": "Menu"
   },
   "hero": {
     "title1": "GASTRO-ETNO",
@@ -47,7 +51,7 @@
       },
       "archery": {
         "title": "Nomad Archery",
-        "description": "Practice ancient archery techniques on horseback"
+        "description": "Practice ancient archery techniques"
       },
       "music": {
         "title": "Traditional Music",
@@ -72,6 +76,7 @@
     "title": "Live Like a Kyrgyz Nomad for One Day",
     "subtitle": "Real people, real culture, real memories.",
     "button": "Contact Us",
+    "guideLink": "OSH Travel Guide",
     "features": {
       "groups": {
         "title": "Small Groups",

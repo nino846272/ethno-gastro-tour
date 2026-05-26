@@ -1,5 +1,6 @@
-import { Users, Clock, UtensilsCrossed, MapPin } from 'lucide-react'
+import { Users, Clock, UtensilsCrossed, MapPin, ExternalLink } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
+import { OSH_TRAVEL_GUIDE_URL } from '../config/links'
 
 // Put your image in public/cta-bg.jpg (or change the path below)
 const CTA_BACKGROUND = '/cta-bg.jpg'
@@ -46,12 +47,24 @@ export default function NomadCta() {
             <p className="mt-4 text-base md:text-lg text-gray-200 font-sans max-w-md">
               {t('nomadCta.subtitle')}
             </p>
-            <a
-              href="#contact"
-              className="inline-block mt-8 bg-orange-500 hover:bg-orange-600 text-white font-semibold font-sans px-8 py-3.5 rounded-lg transition active:scale-[0.98]"
-            >
-              {t('nomadCta.button')}
-            </a>
+            <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white font-semibold font-sans px-8 py-3.5 rounded-lg transition active:scale-[0.98]"
+              >
+                {t('nomadCta.button')}
+              </a>
+              <a
+                href={OSH_TRAVEL_GUIDE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/50 hover:border-white hover:bg-white/10 text-white font-semibold font-sans px-8 py-3.5 rounded-lg transition active:scale-[0.98]"
+              >
+                <MapPin size={18} className="text-orange-400 shrink-0" />
+                {t('nomadCta.guideLink')}
+                <ExternalLink size={16} className="opacity-70 shrink-0" />
+              </a>
+            </div>
           </div>
 
           {/* Right: feature grid */}
