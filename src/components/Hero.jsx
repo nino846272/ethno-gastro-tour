@@ -29,7 +29,7 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-2xl sm:text-3xl md:text-4xl text-orange-400 italic mb-5 md:mb-8 font-serif">
+          <p className="text-2xl sm:text-3xl md:text-4xl text-orange-400 mb-5 md:mb-8 font-serif">
             {t('hero.subtitle')}
           </p>
 
@@ -41,9 +41,12 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-10 md:mb-20">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded transition text-sm md:text-base cursor-pointer">
-            {t('hero.bookBtn')}
-          </button>
+          <a
+            href="#contact"
+            className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded transition text-sm md:text-base cursor-pointer text-center"
+          >
+            {t('header.contactBtn')}
+          </a>
           <button className="border-2 border-white hover:bg-white/10 text-white font-semibold px-8 py-3 rounded transition flex items-center justify-center gap-2 text-sm md:text-base cursor-pointer">
             <Play size={18} />
             {t('hero.videoBtn')}

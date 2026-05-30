@@ -18,6 +18,8 @@ export default function Header() {
     setLang(lang === 'en' ? 'ru' : 'en')
   }
 
+  const switchToLang = lang === 'ru' ? 'EN' : 'RU'
+
   const closeMenu = () => setMenuOpen(false)
 
   useEffect(() => {
@@ -67,10 +69,10 @@ export default function Header() {
               type="button"
               onClick={toggleLanguage}
               className="flex items-center gap-1.5 text-white hover:text-orange-500 transition-colors duration-200 cursor-pointer select-none p-2"
-              aria-label="Toggle language"
+              aria-label={lang === 'ru' ? 'Switch to English' : 'Переключить на русский'}
             >
               <Globe size={18} />
-              <span className="text-sm font-semibold">{lang.toUpperCase()}</span>
+              <span className="text-sm font-semibold">{switchToLang}</span>
             </button>
 
             <a
