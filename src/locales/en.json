@@ -23,7 +23,7 @@
     "menuTitle": "Menu"
   },
   "hero": {
-    "title1": "GASTRO-ETNO",
+    "title1": "GASTRO-ETHNO",
     "title2": "TOUR – OSH",
     "subtitle": "Become a Nomad for a Day",
     "description": "Experience authentic nomadic life in the mountains of southern Kyrgyzstan. Build a yurt, learn archery, taste traditional food, and share stories with local families.",
@@ -37,7 +37,7 @@
     "groupSub": "Max 10 people"
   },
   "experience": {
-    "tag": "Why Choose Gastro-Etno Tour",
+    "tag": "Why Choose Gastro-Ethno Tour",
     "title": "This experience lets you live like a real nomad.",
     "description": "Not a typical tour. Join real nomad families in their daily traditions—from building yurts to cooking over open fires. Real people, real culture, real connections.",
     "cards": {
@@ -103,7 +103,7 @@
     "channels": {
       "telegram": {
         "title": "Telegram",
-        "value": "@gastroetnotour",
+        "value": "@gastroethnotour",
         "hint": "Reply within 15 minutes"
       },
       "whatsapp": {
@@ -113,12 +113,12 @@
       },
       "instagram": {
         "title": "Instagram",
-        "value": "@gastroetnotour",
+        "value": "@gastroethnotour",
         "hint": "Tour photos and videos"
       },
       "email": {
         "title": "Email",
-        "value": "info@gastroetnotour.com",
+        "value": "info@gastroethnotour.com",
         "hint": "For official inquiries"
       }
     },

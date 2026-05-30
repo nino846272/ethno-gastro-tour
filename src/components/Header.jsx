@@ -45,7 +45,7 @@ export default function Header() {
               <img src="/logo.png" alt="Logo" className="w-12 h-12" />
             </div>
             <span className="text-white font-bold text-sm hidden sm:block">
-              GASTRO-ETNO
+              GASTRO-ETHNO
               <br />
               TOUR - OSH
             </span>

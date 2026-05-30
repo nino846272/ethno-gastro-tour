@@ -103,7 +103,7 @@
     "channels": {
       "telegram": {
         "title": "Telegram",
-        "value": "@gastroetnotour",
+        "value": "@gastroethnotour",
         "hint": "Отвечаем за 15 минут"
       },
       "whatsapp": {
@@ -113,12 +113,12 @@
       },
       "instagram": {
         "title": "Instagram",
-        "value": "@gastroetnotour",
+        "value": "@gastroethnotour",
         "hint": "Фото и видео туров"
       },
       "email": {
         "title": "Email",
-        "value": "info@gastroetnotour.com",
+        "value": "info@gastroethnotour.com",
         "hint": "Для официальных запросов"
       }
     },
