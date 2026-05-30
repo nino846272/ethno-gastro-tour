@@ -1,8 +1,10 @@
 import { Play, Star, Clock, Users } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
+import reviewsData from '../data/reviews.json'
 
 export default function Hero() {
   const { t } = useLanguage()
+  const { totalCount } = reviewsData
 
   return (
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-16">
@@ -59,7 +61,7 @@ export default function Hero() {
             </div>
             <div className="text-left">
               <p className="font-bold text-sm md:text-lg leading-tight">{t('hero.rating')}</p>
-              <p className="text-xs md:text-sm text-gray-300">{t('hero.reviews')}</p>
+              <p className="text-xs md:text-sm text-gray-300">{totalCount}+{t('hero.reviews')}</p>
             </div>
           </div>
 

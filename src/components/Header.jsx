@@ -8,7 +8,6 @@ const NAV_LINKS = [
   { href: '#itinerary', key: 'itinerary' },
   { href: '#gallery', key: 'gallery' },
   { href: '#reviews', key: 'reviews' },
-  { href: '#faq', key: 'faq' },
 ]
 
 export default function Header() {
