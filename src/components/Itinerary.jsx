@@ -30,7 +30,7 @@ export default function Itinerary() {
       </div>
 
       {/* Cards row */}
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {itinerary.map(({ time, timeEn, key, icon: Icon }) => (
           <div
             key={key}

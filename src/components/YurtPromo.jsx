@@ -15,7 +15,7 @@ export default function YurtPromo() {
         
         {/* Left Column: Text Content */}
         <div className="flex-1 text-left space-y-6">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-tight text-[#fdf9f4]">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold font-serif leading-tight text-[#fdf9f4]">
             {t('yurtPromo.title')}
           </h2>
           <p className="text-[#ebd9c8] text-base md:text-lg leading-relaxed font-sans max-w-xl">

@@ -83,7 +83,7 @@ export default function Experience() {
 
       {/* Top Header Section */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-        <div className="max-w-2xl">
+        <div className="max-w-4xl">
           <span className="text-xs font-semibold uppercase tracking-wider text-amber-600 block mb-3">
             {t('experience.tag')}
           </span>
