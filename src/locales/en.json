@@ -71,30 +71,6 @@
     "title": "Loved by Travellers",
     "viewAll": "View all reviews on Google →"
   },
-  "nomadCta": {
-    "title": "Live Like a Kyrgyz Nomad for One Day",
-    "subtitle": "Real people, real culture, real memories.",
-    "button": "Contact Us",
-    "guideLink": "OSH Travel Guide",
-    "features": {
-      "groups": {
-        "title": "Small Groups",
-        "subtitle": "Max 10 people"
-      },
-      "duration": {
-        "title": "6–7 Hours",
-        "subtitle": "Full experience"
-      },
-      "food": {
-        "title": "Food Included",
-        "subtitle": "Traditional meals"
-      },
-      "location": {
-        "title": "Osh, Kyrgyzstan",
-        "subtitle": "Silk Road city"
-      }
-    }
-  },
   "contact": {
     "tag": "Contact Us",
     "title": "We're Here for You",

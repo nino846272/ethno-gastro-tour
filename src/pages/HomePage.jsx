@@ -5,7 +5,6 @@ import YurtPromo from '../components/YurtPromo'
 import Itinerary from '../components/Itinerary'
 import Reviews from '../components/Reviews'
 import Contact from '../components/Contact'
-import NomadCta from '../components/NomadCta'
 
 export default function HomePage() {
   return (
@@ -17,7 +16,6 @@ export default function HomePage() {
       <Itinerary />
       <Reviews />
       <Contact />
-      <NomadCta />
     </div>
   )
 }
