@@ -117,7 +117,8 @@
     },
     "address": {
       "title": "Our Address",
-      "text": "Osh, Kyrgyzstan — we meet you at Sulaiman-Too"
+      "text": "ABS Guest House Osh",
+      "mapsLink": "Google Maps"
     },
     "hours": {
       "title": "Working Hours",

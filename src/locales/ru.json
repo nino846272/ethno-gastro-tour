@@ -117,7 +117,8 @@
     },
     "address": {
       "title": "Наш адрес",
-      "text": "г. Ош, Кыргызстан — встречаем у Сулайман-Тоо"
+      "text": "ABS Guest House Osh",
+      "mapsLink": "Google Карты"
     },
     "hours": {
       "title": "Часы работы",

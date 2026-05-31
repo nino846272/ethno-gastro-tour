@@ -1,4 +1,4 @@
-import { Send, MessageCircle, Mail, MapPin, Clock } from 'lucide-react'
+import { Send, MessageCircle, MapPin, ExternalLink } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 import { contactLinks } from '../config/contact'
 
@@ -45,13 +45,6 @@ const CHANNELS = [
     iconWrap: 'bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-orange-500/20 text-pink-400',
     valueClass: 'text-pink-400 hover:text-pink-300',
   },
-  {
-    key: 'email',
-    icon: Mail,
-    href: contactLinks.email,
-    iconWrap: 'bg-orange-500/15 text-orange-400',
-    valueClass: 'text-orange-400 hover:text-orange-300',
-  },
 ]
 
 function ChannelCard({ channel, t }) {
@@ -87,24 +80,9 @@ function ChannelCard({ channel, t }) {
   )
 }
 
-function InfoCard({ icon: Icon, title, text }) {
-  return (
-    <div className="flex items-start gap-4 rounded-2xl bg-[#2c241e] border border-white/5 px-6 py-5 md:px-8 md:py-6">
-      <div className="w-12 h-12 rounded-xl bg-orange-500/15 text-orange-400 flex items-center justify-center shrink-0">
-        <Icon size={22} strokeWidth={1.5} />
-      </div>
-      <div className="min-w-0">
-        <h3 className="font-sans font-bold text-white text-base mb-1">{title}</h3>
-        <p className="font-sans text-gray-400 text-sm leading-relaxed">{text}</p>
-      </div>
-    </div>
-  )
-}
-
 export default function Contact() {
   const { t } = useLanguage()
   const mapsHref = contactLinks.maps
-  const mapsIsLink = mapsHref !== '#'
 
   return (
     <section id="contact" className="bg-[#1a1512] text-white py-20 md:py-24 px-6 md:px-12">
@@ -134,33 +112,31 @@ export default function Contact() {
           ))}
         </div>
 
-        {/* Address & hours */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-          {mapsIsLink ? (
-            <a
-              href={mapsHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block rounded-2xl transition-colors hover:bg-[#352c25]"
-            >
-              <InfoCard
-                icon={MapPin}
-                title={t('contact.address.title')}
-                text={t('contact.address.text')}
-              />
-            </a>
-          ) : (
-            <InfoCard
-              icon={MapPin}
-              title={t('contact.address.title')}
-              text={t('contact.address.text')}
-            />
-          )}
-          <InfoCard
-            icon={Clock}
-            title={t('contact.hours.title')}
-            text={t('contact.hours.text')}
-          />
+        {/* Address */}
+        <div className="rounded-2xl bg-[#2c241e] border border-white/5 px-6 py-5 md:px-8 md:py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+          <div className="flex items-start gap-4 min-w-0 flex-1">
+            <div className="w-12 h-12 rounded-xl bg-orange-500/15 text-orange-400 flex items-center justify-center shrink-0">
+              <MapPin size={22} strokeWidth={1.5} />
+            </div>
+            <div className="min-w-0">
+              <h3 className="font-sans font-bold text-white text-base mb-1">
+                {t('contact.address.title')}
+              </h3>
+              <p className="font-sans text-gray-400 text-sm leading-relaxed">
+                {t('contact.address.text')}
+              </p>
+            </div>
+          </div>
+
+          <a
+            href={mapsHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 shrink-0 font-sans text-sm font-semibold text-orange-400 hover:text-orange-300 border border-orange-500/30 hover:border-orange-500/50 rounded-xl px-5 py-3 transition-colors duration-200 sm:ml-4"
+          >
+            {t('contact.address.mapsLink')}
+            <ExternalLink size={16} className="opacity-80" />
+          </a>
         </div>
       </div>
     </section>
