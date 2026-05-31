@@ -1,16 +1,63 @@
-# React + Vite
+# Gastro-Ethno Tour – Osh
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Лендинг гастро-этно тура в Оше (Кыргызстан): одностраничный сайт с описанием программы, впечатлений, отзывов и контактов для бронирования.
 
-Currently, two official plugins are available:
+**Сайт:** [https://gastro-etno-tour.vercel.app/](https://gastro-etno-tour.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## О проекте
 
-## React Compiler
+Gastro-Ethno Tour — культурный однодневный тур в горах южного Кыргызстана. На сайте представлены:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero** — главный экран с описанием тура и ключевыми показателями
+- **Experience** — что ждёт участников (Сулайман-Тоо, юрта, стрельба из лука, музыка, традиционная кухня)
+- **Yurt Promo** — мастер-класс по сборке юрты
+- **Itinerary** — программа дня по шагам
+- **Reviews** — отзывы путешественников
+- **Contact** — Telegram, WhatsApp, Instagram, email и адрес
 
-## Expanding the ESLint configuration
+Сайт поддерживает **русский** и **английский** языки. Выбранный язык сохраняется в `localStorage`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Стек
+
+- [React 19](https://react.dev/) + [Vite 8](https://vite.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- [Lucide React](https://lucide.dev/) — иконки
+- [Vercel Analytics](https://vercel.com/docs/analytics) и Speed Insights
+
+## Запуск локально
+
+```bash
+npm install
+npm run dev
+```
+
+Сборка для продакшена:
+
+```bash
+npm run build
+npm run preview
+```
+
+Линтер:
+
+```bash
+npm run lint
+```
+
+## Структура
+
+```
+src/
+├── components/   # UI-секции (Header, Hero, Experience, …)
+├── config/       # Контакты и внешние ссылки
+├── context/      # LanguageContext (i18n)
+├── data/         # Отзывы и статистика
+├── locales/      # ru.json, en.json
+└── pages/        # HomePage
+public/           # Статика, robots.txt, sitemap.xml
+```
+
+## Деплой
+
+Проект развёрнут на [Vercel](https://vercel.com/). После push в репозиторий деплой выполняется автоматически.
