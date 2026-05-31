@@ -78,7 +78,7 @@ export default function Reviews() {
         <div className="text-center mt-12">
           <a
             href={googleReviewsUrl}
-            target={googleReviewsUrl !== '#' ? '_blank' : undefined}
+            target={googleReviewsUrl !== '' ? '_blank' : undefined}
             rel={googleReviewsUrl !== '#' ? 'noopener noreferrer' : undefined}
             className="inline-flex items-center gap-1 font-sans text-orange-500 hover:text-orange-600 font-medium text-sm md:text-base transition-colors"
           >

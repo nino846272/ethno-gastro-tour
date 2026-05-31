@@ -126,29 +126,31 @@ export default function Contact() {
           ))}
         </div>
 
-        <div className="rounded-2xl bg-[#2c241e] border border-white/5 px-6 py-5 md:px-8 md:py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+        <a
+          href={MAPS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 rounded-2xl bg-[#2c241e] border border-white/5 px-6 py-5 md:px-8 md:py-6 transition-all duration-300 hover:bg-[#352c25] hover:border-white/10 cursor-pointer"
+        >
           <div className="flex items-start gap-4 min-w-0 flex-1">
-            <div className="w-12 h-12 rounded-xl bg-orange-500/15 text-orange-400 flex items-center justify-center shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-orange-500/15 text-orange-400 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-105">
               <MapPin size={22} strokeWidth={1.5} />
             </div>
             <div className="min-w-0">
               <h3 className="font-sans font-bold text-white text-base mb-1">
                 {t('contact.address.title')}
               </h3>
-              <p className="font-sans text-gray-400 text-sm leading-relaxed">{ADDRESS_TEXT}</p>
+              <p className="font-sans text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors">
+                {ADDRESS_TEXT}
+              </p>
             </div>
           </div>
 
-          <a
-            href={MAPS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 shrink-0 font-sans text-sm font-semibold text-orange-400 hover:text-orange-300 border border-orange-500/30 hover:border-orange-500/50 rounded-xl px-5 py-3 transition-colors duration-200 sm:ml-4"
-          >
+          <span className="inline-flex items-center justify-center gap-2 shrink-0 font-sans text-sm font-semibold text-orange-400 group-hover:text-orange-300 transition-colors sm:ml-4">
             {t('contact.address.mapsLink')}
             <ExternalLink size={16} className="opacity-80" />
-          </a>
-        </div>
+          </span>
+        </a>
       </div>
     </section>
   )
