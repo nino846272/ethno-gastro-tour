@@ -1,85 +1,103 @@
 {
   "itinerary": {
-    "title": "Your Day as a Nomad",
+    "title": "Travel Itinerary",
     "items": {
-      "teaHouse": { "title": "Tea House & Introduction", "description": "Meet your guide over traditional chai and bread" },
-      "mountain": { "title": "Sulaiman-Too Sacred Mountain", "description": "Explore the holy mountain with ancient petroglyphs" },
-      "samsa": { "title": "Traditional Samsa Stop", "description": "Taste fresh-baked samsa from a local tandoor oven" },
-      "yurt": { "title": "Build Your Nomad Yurt", "description": "Hands-on workshop with nomad craftspeople" },
-      "archery": { "title": "Horse Archery Lesson", "description": "Learn the ancient art of mounted archery" },
-      "dinner": { "title": "Kuurdak Dinner & Stories", "description": "Traditional feast with local music and tales" }
+      "teaHouse": {
+        "title": "Tea House: Meeting the Group",
+        "description": "Traditional tea ceremony and introduction of tour participants"
+      },
+      "mountain": {
+        "title": "Sacred Mountain Sulaiman-Too",
+        "description": "Discover the history, legends, and panoramic views of the sacred Sulaiman-Too mountain"
+      },
+      "samsa": {
+        "title": "Traditional Samsa Tasting",
+        "description": "Try aromatic samsa freshly baked in a tandoor oven"
+      },
+      "yurt": {
+        "title": "Building a Traditional Kyrgyz Yurt",
+        "description": "Take part in assembling a real Kyrgyz yurt and learn about the traditions of nomadic life"
+      },
+      "archery": {
+        "title": "Archery",
+        "description": "Test your skills in traditional archery"
+      },
+      "dinner": {
+        "title": "Dinner: Kuurdaq & Stories",
+        "description": "Enjoy traditional Kyrgyz kuurdaq alongside fascinating stories about the nomadic way of life"
+      }
     }
   },
   "header": {
     "experience": "Experience",
-    "itinerary": "Itinerary",
+    "itinerary": "Day Plan",
     "gallery": "Gallery",
     "reviews": "Reviews",
     "contactBtn": "Contact Us",
-    "guideLink": "OSH Travel Guide",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu",
+    "guideLink": "Osh City Guide",
+    "menuOpen": "Open Menu",
+    "menuClose": "Close Menu",
     "menuTitle": "Menu"
   },
   "hero": {
     "title1": "GASTRO-ETHNO",
     "title2": "TOUR – OSH",
     "subtitle": "Feel like a nomad for a day",
-    "description": "In the mountains of southern Kyrgyzstan. Build a yurt, try traditional food.",
-    "bookBtn": "Book Your Experience",
+    "description": "Discover national cuisine, living traditions, and vivid experiences all in one journey",
+    "bookBtn": "Book Now",
     "videoBtn": "Watch Video",
-    "rating": "4.9 Rating",
+    "rating": "Rating 4.9",
     "reviews": " reviews",
-    "duration": "6-7 Hours",
-    "durationSub": "Full experience",
+    "duration": "6–7 hours",
+    "durationSub": "Duration",
     "group": "Small Groups",
-    "groupSub": "Max 10 people"
+    "groupSub": "up to 10 people"
   },
   "experience": {
-    "tag": "Why Choose Gastro-Ethno Tour",
-    "title": "This experience lets you live like a real nomad.",
-    "description": "Not a typical tour. Join real nomad families in their daily traditions—from building yurts to cooking over open fires. Real people, real culture, real connections.",
+    "tag": "Why Choose Us",
+    "title": "You'll take home memories that last far longer than photographs",
+    "description": "",
     "cards": {
       "mountain": {
-        "title": "Sacred Mountain",
-        "description": "Climb the UNESCO World Heritage Sulaiman-Too with breathtaking views"
+        "title": "Sacred Mountain Sulaiman-Too",
+        "description": "A UNESCO World Heritage Site with a thousand-year history and a panoramic view of all of Osh"
       },
       "yurt": {
-        "title": "Build a Yurt",
-        "description": "Learn traditional yurt construction from nomad masters"
+        "title": "Build a Yurt with Your Own Hands",
+        "description": "Learn the traditional art of yurt assembly"
       },
       "archery": {
-        "title": "Nomad Archery",
-        "description": "Practice ancient archery techniques"
+        "title": "Archery",
+        "description": "Practice the ancient art of traditional archery"
       },
       "music": {
-        "title": "Traditional Music",
-        "description": "Experience authentic komuz music and nomad storytelling"
+        "title": "Komuz Playing & National Songs",
+        "description": "A live musical performance"
       },
       "feast": {
-        "title": "Kyrgyz Feast",
-        "description": "Taste kuurdak, samsa, and bread cooked over fire"
+        "title": "Traditional Nomadic Dish",
+        "description": "Savor an authentic dish inspired by the traditions of Kyrgyz nomads"
       }
     }
   },
   "yurtPromo": {
-    "title": "Build a Real Nomad Yurt",
-    "description": "Learn the ancient craft of yurt construction from nomad families who've practiced these techniques for generations. Get hands-on experience assembling the traditional wooden frame.",
+    "title": "Masterclass: Building a Traditional Kyrgyz Yurt",
+    "description": "Assemble a Kyrgyz yurt with your own hands and immerse yourself in the traditions of nomadic life",
     "watchBtn": "Watch Video"
   },
   "reviews": {
-    "title": "Loved by Travellers",
-    "viewAll": "View all reviews on Google →"
+    "title": "Participant Reviews",
+    "viewAll": "All reviews on Google →"
   },
   "contact": {
-    "tag": "Contact Us",
-    "title": "We're Here for You",
-    "description": "Ask any question or book your tour right away — we reply quickly on any messenger.",
+    "tag": "",
+    "title": "Contact Us",
+    "description": "We'd love to help you plan an unforgettable journey and answer any questions you may have",
     "channels": {
       "telegram": {
         "title": "Telegram",
         "value": "@gastroethnotour",
-        "hint": "Reply within 15 minutes"
+        "hint": ""
       },
       "whatsapp": {
         "title": "WhatsApp",
@@ -99,12 +117,11 @@
     },
     "address": {
       "title": "Our Address",
-      "text": "Osh, Kyrgyzstan — we meet at Sulaiman-Too"
+      "text": "Osh, Kyrgyzstan — we meet you at Sulaiman-Too"
     },
     "hours": {
       "title": "Working Hours",
-      "text": "Daily from 9:00 AM to 8:00 PM"
+      "text": "Daily from 09:00 to 20:00"
     }
   }
 }
-
