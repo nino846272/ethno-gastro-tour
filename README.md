@@ -50,7 +50,7 @@ npm run lint
 ```
 src/
 ├── components/   # UI-секции (Header, Hero, Experience, …)
-├── config/       # Контакты и внешние ссылки
+├── config/       # Внешние ссылки
 ├── context/      # LanguageContext (i18n)
 ├── data/         # Отзывы и статистика
 ├── locales/      # ru.json, en.json

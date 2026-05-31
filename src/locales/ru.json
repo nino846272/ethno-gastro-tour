@@ -96,33 +96,24 @@
     "channels": {
       "telegram": {
         "title": "Telegram",
-        "value": "@gastroethnotour",
         "hint": ""
       },
       "whatsapp": {
         "title": "WhatsApp",
-        "value": "+996 XXX XXX XXX",
         "hint": "Звонки и сообщения"
+      },
+      "phone": {
+        "title": "Телефон",
+        "hint": "Звоните в любое время"
       },
       "instagram": {
         "title": "Instagram",
-        "value": "@gastroethnotour",
         "hint": "Фото и видео туров"
-      },
-      "email": {
-        "title": "Email",
-        "value": "info@gastroethnotour.com",
-        "hint": "Для официальных запросов"
       }
     },
     "address": {
       "title": "Наш адрес",
-      "text": "ABS Guest House Osh",
       "mapsLink": "Google Карты"
-    },
-    "hours": {
-      "title": "Часы работы",
-      "text": "Ежедневно с 09:00 до 20:00"
     }
   }
 }
